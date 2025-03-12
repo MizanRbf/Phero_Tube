@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PH Tube</title>
+  <!-- Tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="flex justify-between w-11/12 mx-auto my-4 border-b-2 pb-4">
+    <div>
+      <img src="assets/Logo.png" alt="">
+    </div>
+
+    <!-- Search Box -->
+    <div class="flex">
+      <label class="input flex items-center gap-2 rounded-tr-none rounded-br-none border-r-0 border-none bg-gray-100">
+        <input type="text" placeholder="Search" />
+        
+      </label>
+      <!-- Search Btn -->
+      <button class="btn mr-2 bg-gray-300 rounded-tl-none rounded-bl-none"><svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        fill="currentColor"
+        class="h-4 w-4 opacity-70">
+        <path
+          fill-rule="evenodd"
+          d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+          clip-rule="evenodd" />
+      </svg></button>
+
+      <!-- Sort -->
+      <button class="btn bg-gray-300">Sort by view</button>
+
+    </div>
+    <div>
+      <button class="btn bg-[#FF1F3D] text-white">Blog</button>
+    </div>
+  </nav>
+
+  <!-- Category Container -->
+   <Section class="flex justify-center items-center gap-4" id="category-container">
+    <button class="btn btn-sm bg-[#FF1F3D] text-white hover:bg-[#FF1F3D]" onclick="loadVideos()">All</button>
+
+   </Section>
+   <!-- Video Container -->
+   <section class="w-11/12 mx-auto grid grid-cols-4 gap-6 mt-10" id="video-container">
+   <div class="col-span-full text-center flex flex-col items-center mt-32">
+    <img class="w-36 h-36" src="assets/Icon.png" alt="">
+    <p class="text-4xl font-bold mt-4">Oops!! Sorry, There is <br> no content here</p>
+   </div>
+   </section>
+</body>
+<script src="script.js"></script>
+</html>
