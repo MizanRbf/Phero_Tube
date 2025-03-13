@@ -9,6 +9,12 @@
   <!-- DaisyUI cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+ <style>
+  .active {
+    background: #FF1F3D;
+    color: white;
+  }
+ </style>
 </head>
 <body>
   <!-- Navbar Section -->
@@ -16,37 +22,18 @@
     <div>
       <img src="assets/Logo.png" alt="">
     </div>
-
-    <!-- Search Box -->
-    <div class="flex">
-      <label class="input flex items-center gap-2 rounded-tr-none rounded-br-none border-r-0 border-none bg-gray-100">
-        <input type="text" placeholder="Search" />
-        
-      </label>
-      <!-- Search Btn -->
-      <button class="btn mr-2 bg-gray-300 rounded-tl-none rounded-bl-none"><svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        class="h-4 w-4 opacity-70">
-        <path
-          fill-rule="evenodd"
-          d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-          clip-rule="evenodd" />
-      </svg></button>
-
-      <!-- Sort -->
-      <button class="btn bg-gray-300">Sort by view</button>
-
-    </div>
+    <label class="input flex items-center gap-4 border border-slate-300">
+      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+      <input id="search-input" type="search" required placeholder="Search"/>
+    </label>
     <div>
-      <button class="btn bg-[#FF1F3D] text-white">Blog</button>
+      <button class="btn bg-[#FF1F3D] text-white">Sort by view</button>
     </div>
   </nav>
 
   <!-- Category Container -->
    <Section class="flex justify-center items-center gap-4" id="category-container">
-    <button class="btn btn-sm bg-[#FF1F3D] text-white hover:bg-[#FF1F3D]" onclick="loadVideos()">All</button>
+    <button id="btn-all" class="btn btn-sm hover:text-white hover:bg-[#FF1F3D]" onclick="loadVideos()">All</button>
 
    </Section>
    <!-- Video Container -->
@@ -56,6 +43,22 @@
     <p class="text-4xl font-bold mt-4">Oops!! Sorry, There is <br> no content here</p>
    </div>
    </section>
+
+   <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="video_details" class="modal">
+  <div class="modal-box">
+    <div id="details-container">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 </body>
 <script src="script.js"></script>
 </html>
