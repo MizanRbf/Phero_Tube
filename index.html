@@ -31,11 +31,18 @@
     </div>
   </nav>
 
+
   <!-- Category Container -->
    <Section class="flex justify-center items-center gap-4" id="category-container">
     <button id="btn-all" class="btn btn-sm hover:text-white hover:bg-[#FF1F3D]" onclick="loadVideos()">All</button>
 
    </Section>
+
+   <!-- Loader -->
+  <section id="loader" class="flex items-center justify-center mt-10 hidden">
+    <span class="loading loading-dots loading-lg"></span>
+  </section>
+
    <!-- Video Container -->
    <section class="w-11/12 mx-auto grid grid-cols-4 gap-6 mt-10" id="video-container">
    <div class="col-span-full text-center flex flex-col items-center mt-32">
