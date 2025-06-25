@@ -40,7 +40,5 @@ No external JS framework or bundler was used — it’s all CDN-based and works 
 ---
 
 ## 🚀 How to Run Locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MizanRbf/Phero_Tube.git
+https://github.com/MizanRbf/Phero_Tube.git
+ 
