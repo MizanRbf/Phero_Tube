@@ -4,17 +4,6 @@ Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI
 
 ---
 
-## 🔗 Live Link
-[👉 Visit Live Site](https://mizanrbf.github.io/Phero_Tube/) <!-- Replace with your deployed live URL -->
-
----
-
-## 📸 Screenshot
-
-![PH Tube Screenshot](assets/screenshot.png) <!-- Replace with an actual screenshot if available -->
-
----
-
 ## 🛠️ Tech Stack
 
 - **HTML5**
@@ -44,6 +33,11 @@ Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI
 - Programming Hero Public API
 
 No external JS framework or bundler was used — it’s all CDN-based and works in the browser directly.
+
+---
+
+## 🔗 Live Link
+[👉 Visit Live Site](https://mizanrbf.github.io/Phero_Tube/)
 
 ---
 
