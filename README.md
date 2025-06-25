@@ -5,7 +5,7 @@ Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI
 ---
 
 ## 🔗 Live Link
-[👉 Visit Live Site](https://your-live-link.netlify.app) <!-- Replace with your deployed live URL -->
+[👉 Visit Live Site](https://mizanrbf.github.io/Phero_Tube/) <!-- Replace with your deployed live URL -->
 
 ---
 
