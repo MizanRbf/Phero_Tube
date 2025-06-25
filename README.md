@@ -1,6 +1,6 @@
 # Phero Tube 🎬
 
-Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI), and JavaScript. It uses Programming Hero’s public API to fetch and display categorized video content. Users can sort, search, and view details of each video dynamically.
+Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI), and JavaScript. Users can sort, search, and view details of each video dynamically.
 
 ---
 
@@ -10,7 +10,6 @@ Phero Tube is a video content platform built using HTML, CSS (Tailwind + DaisyUI
 - **Tailwind CSS**
 - **DaisyUI**
 - **JavaScript (Vanilla)**
-- **Programming Hero Open API**
 
 ---
 
